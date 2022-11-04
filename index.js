@@ -1,16 +1,18 @@
-function cadastro (nome, matricula, frequencia, nota, turma) {
-    console.log(this);
-    this.nome = nome;
-    this.matricula = matricula;
-    this.frequencia = frequencia;
-    this.nota = nota;
-    this.turma = turma;
+class Cadastro {
+    constructor(nome, matricula, frequencia, nota, turma){
+        console.log(this);
+        this.nome = nome;
+        this.matricula = matricula;
+        this.frequencia = frequencia;
+        this.nota = nota;
+        this.turma = turma;
+    }
 }
 
 var cad = [];
 
-cad[0] = new cadastro("João do Picão", "CP3017311", "75.6", "10" , "EOFOR");
-cad[1] = new cadastro("Vião", "CP301729X", "92.0", "10", "EOELSE");
+cad[0] = new Cadastro("João do Picão", "CP3017311", "75.6", "10" , "EOFOR");
+cad[1] = new Cadastro("Vião", "CP301729X", "92.0", "10", "EOELSE");
 
 var listar = (turma) => {
     

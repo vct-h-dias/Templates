@@ -16,9 +16,9 @@ cad[1] = new Cadastro("Dom Quixote", "Romance", "Miguel de Cervantes", "9");
 var listar = () => {
     
     var conteudo = "<table class='table'>";
-    conteudo += "<tr><th>Nome</th><th>Gênero</th><th>Autor</th><th>Avaliação</th></tr>";
+    conteudo += "<tr><th>Input 1</th><th>Input 2</th><th>Input 3</th><th>Input 4</th></tr>";
     for (let i = 0; i < cad.length; i++) {
-
+        
         conteudo += "<tr><td>" + cad[i].Info1 + "</td>";
         conteudo += "<td>" + cad[i].Info2 + "</td>";
         conteudo += "<td>" + cad[i].Info3 + "</td>";

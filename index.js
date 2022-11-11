@@ -1,10 +1,10 @@
 class Cadastro {
-    constructor(nome, genero, autor, avaliacao){
+    constructor(i1, i2, i3, i4){
         console.log(this);
-        this.Nome = nome;
-        this.Genero = genero;
-        this.Autor = autor;
-        this.Avaliacao = avaliacao;
+        this.Info1 = i1;
+        this.Info2 = i2;
+        this.Info3 = i3;
+        this.Info4 = i4;
     }
 }
 
@@ -13,16 +13,16 @@ var cad = [];
 cad[0] = new Cadastro("Harry Potter", "Romance", "JK", "10");
 cad[1] = new Cadastro("Dom Quixote", "Romance", "Miguel de Cervantes", "9");
 
-var listar = (turma) => {
+var listar = () => {
     
     var conteudo = "<table class='table'>";
     conteudo += "<tr><th>Nome</th><th>Gênero</th><th>Autor</th><th>Avaliação</th></tr>";
     for (let i = 0; i < cad.length; i++) {
-        console.log(turma)
-        conteudo += "<tr><td>" + cad[i].Nome + "</td>";
-        conteudo += "<td>" + cad[i].Genero + "</td>";
-        conteudo += "<td>" + cad[i].Autor + "</td>";
-        conteudo += "<td>" + cad[i].Avaliacao + "</td></tr>";
+
+        conteudo += "<tr><td>" + cad[i].Info1 + "</td>";
+        conteudo += "<td>" + cad[i].Info2 + "</td>";
+        conteudo += "<td>" + cad[i].Info3 + "</td>";
+        conteudo += "<td>" + cad[i].Info4 + "</td></tr>";
         
     }
     
@@ -33,12 +33,12 @@ var listar = (turma) => {
 }
 
 function matricular(){
-    var l = new Cadastro(nome.value, genero.value, autor.value, avaliacao.value);
+    var l = new Cadastro(i1.value, i2.value, i3.value, i4.value);
     console.log(l);
     cad.push(l);
-    nome.value = ""
-    genero.value = ""
-    autor.value = ""
-    avaliacao.value = ""
+    i1.value = ""
+    i2.value = ""
+    i3.value = ""
+    i4.value = ""
     listar();
 }

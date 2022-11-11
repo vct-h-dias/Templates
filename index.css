@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-html {
-    --Cor1: #ffffffff;
-    --Cor2: #00a7e1ff;
-    --Cor3: #00171fff;
-    --Cor4: #003459ff;
-    --Cor5: #007ea7ff;
 
-}
 
 * {
     margin: 0;
@@ -23,7 +16,7 @@ body{
     display: block;
 }
 
-.cabecaokk {
+.head{
     padding: 1.3rem;
     background-color: var(--Cor4);
     display: flex;
@@ -31,46 +24,12 @@ body{
     justify-content: space-around;
 }
 
-a{
-    text-decoration: none;
-    color: var(--Cor1);
-}
 
-.lista li{
-    display:inline-block;
 
-    margin: 2.5vw;
-}
 
-.lista a{
-    background-color: var(--Cor3);
-    border: solid var(--Cor1) 1px;
-    color: var(--Cor1);
-    
-    border-radius: 8px;
-    padding: 5px;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    
-    transition: all .2s;
-}
-
-.lista a:hover{
-    background-color: var(--Cor1);
-
-    border-color: var(--Cor3);
-    
-    color: var(--Cor3);
-    
-}
-
-.lista{
-    display: flex;
-    gap: 0.3rem;
-}
 
 .icon{
-    height: 80px;
+    height: 7rem;
 }
 
 
@@ -80,25 +39,9 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 100%;
-
     background-color: var(--Cor3);
     
-}
-
-.t1 li{
-    display: inline-block;
-    margin: 2.5vw;
-}
-
-
-
-.turma li{
-
-    padding: 10px;
-    display: inline-block;
-
 }
 
 .content{
@@ -107,8 +50,13 @@ a{
     justify-content: center;
 }
 
+table{
+    margin-top: 1rem;
+    background-color: rgb(151, 252, 0);
+    border-collapse: collapse;
+}
+
 td, tr, th{
-    border-collapse: none;
     border: 1px solid black;
     padding: 10px;
 }

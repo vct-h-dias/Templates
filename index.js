@@ -40,5 +40,7 @@ function matricular(){
     i2.value = ""
     i3.value = ""
     i4.value = ""
+    const audio = document.querySelector("audio");
+    audio.play();
     listar();
 }

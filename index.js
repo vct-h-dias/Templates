@@ -46,7 +46,9 @@ function matricular(){
 
 function tocar(){
     console.log("pull")
-    
+    console.log("branch");
+    console.log("original");
+
     const audio = document.querySelector("audio");
     audio.play();
 }
